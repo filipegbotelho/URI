@@ -1,46 +1,13 @@
+/* Filipe Gonçalves
+   URI - 1174*/
 #include <stdio.h>
-
-int main(){
-	
-	long int n, i;
-	
-	scanf("%li", &n);
-	
-	int valor[n];
-	
-	for (i = 0; i < n; i++){
-		scanf("%li", &valor[i]);
-
-	}
-	
-	for(i = 0; i < n; i++){
-		if (valor[i] == 0){
-		printf("NULL\n");
-		} 
-		
-		else if (valor[i] != 0){
-			
-			if (valor[i]%2 != 0){
-				printf("ODD ");
-			} else{
-				printf("EVEN ");
-			}
-			
-			if (valor[i] > 0){
-				printf("POSITIVE\n");
-			}else{
-				printf("NEGATIVE\n");
-			}
-		
-		}
-	}
-
-	
-	
-	
-	
-	
-	
-	
-	return 0;
+int main(void){
+    int i;
+    double a[100];
+    for (i = 0; i < 100; i++){
+        scanf("%lf", &a[i]);
+        if (a[i] <= 10.0)
+            printf("A[%i] = %.1f\n", i, a[i]);
+    }
+    return 0;
 }
